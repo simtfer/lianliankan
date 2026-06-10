@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>连连看 - 浏览器预览版</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: #1a1a2e;
+    overflow: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  #gameCanvas {
+    display: block;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    border-radius: 8px;
+    touch-action: none;
+  }
+</style>
+</head>
+<body>
+<canvas id="gameCanvas"></canvas>
+<script src="game.js"></script>
+</body>
+</html>
